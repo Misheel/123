@@ -1,0 +1,8 @@
+body {background-color: #f5f5f5;}
+
+.card {width: 280px; height: 490px; background-color: #fff;}
+.card__image {overflow: hidden; height: 280px; background-color: black; background-size: cover; background-position: center center;}
+.card__text {padding: 25px 30px 0;}
+.card__title {margin: 0; color: #363636; font-size: 16px; font-family: 'Roboto Condensed', sans-serif; font-weight: bold; text-transform: uppercase; padding-right: 50px; margin-bottom: 10px; line-height: 1.4;}
+.card__description {font-family: 'Roboto', sans-serif; font-size: 12px; color: #999; line-height: 1.4; margin-bottom: 20px;}
+.card__more {display: block; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 10px; color: #65a39b; text-transform: uppercase;}

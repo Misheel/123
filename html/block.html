@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>block</title>		
+    </head>
+    
+    <style>
+        body {
+            margin: 0;  
+            margin-top: 50px;
+        }
+
+        .header {
+            background-color: aqua;
+            height: 50px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+
+        .block1 {
+            font-family: monospace;
+            text-align: justify;
+            background-color: black;
+            background-image: url('https://content.ikon.mn/news/2019/5/3/13518f_1471934_649783811820495_6554729970513913061_n_x974.jpg');
+            background-size: 200px;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+        }
+        .block {
+            border: 1px dashed blue;
+            padding: 20px;
+            margin-bottom: 50px;
+            width: 300px;
+            height: 250px;
+
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+            font-family:  Arial, Tahoma, sans-serif;
+
+            text-decoration: underline;
+            text-align: justify; /*left, right, center*/
+             
+            } 
+
+            .relex {
+                width: 500px; height: 200px; border: 1px solid #000;
+                position: relative;
+                top: -25px;
+                left: 50px;
+                }
+
+                .absoluteex {
+                    width: 40%;
+                    height: 40px;
+                    border: 1px solid brown;
+                    position: absolute;
+                    top: 80px;
+                    left: 80px;
+                }
+    </style>
+	
+	<body>
+        <div class="header">
+
+        </div>
+	
+		<p class="block1">
+            Хүчирхийлэл  мэдлийн   байдлаас үүсдэг бөгөөд хүүхдийг өөрөөсөө сул дорой, жижиг, хүн биш гэж дорд үздэг. Тухайн хүчирхийлэгч хаа гудамжинд явж буй танихгүй хүн рүү дайрахгүй, эсвэл найз руугаа зандрахгүй, зөвхөн гэртээ ирж өөрийн хүүхэд рүүгээ дайрдаг . Тиймээс энэ бол ухамсарт үйлдэл. Хүчирхийлэлд байсан хүмүүс эрүүл аюулгүй харилцаа гэж юу байдгийг мэдэхгүй өссөн байж болно.
+        </p>
+
+        <div class="block">
+            Text
+        </div>
+
+        <div class="relex">
+            <div class="absoluteex">
+
+            </div>
+        </div>
+
+        <div class="block">
+                TEXT
+            </div>
+	</body>
+
+</html>
+
