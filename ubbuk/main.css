@@ -7,9 +7,19 @@
 .card__description {font-family: 'Roboto', sans-serif; font-size: 12px; color: #999; line-height: 1.4; margin-bottom: 20px;}
 .card__more {display: block; text-decoration: none; font-family: 'Roboto', sans-serif; font-size: 10px; color: #65a39b; text-transform: uppercase;}
 
+.stat{position: relative; height: 250px; background-color: #65a39b; background-image: url('assets/statistic.jpg'); background-position: center center; background-attachment: fixed;}
+.stat__cover{position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(6, 67, 119, 0.5);}
+.stat__info{position: relative; padding-top: 70px; overflow: hidden;}
+.stat__item{position: relative; float: left; margin-right: 50px;}
+.stat__item::after{position: absolute; left: 0; top: 75px; display: block; content: ' '; height: 2px; width: 20px; background-color: #0f436f;}
+.stat__item--workers{width: 200px; margin-right: 100px;}
+.stat__number{font-family: 'Roboto Condensed', sans-serif; font-weight: bold; color: #fff; font-size: 48px; margin-bottom: 40px;}
+.stat__desc{ font-family: 'Roboto', sans-serif; color: #fff; font-size: 14px;}
+
 
 /* Layout */
-body {background-color: #f5f5f5;}
-.container {width: 960px;  margin-right: auto; margin-left: auto;}
+body {background-color: #f5f5f5; margin: 0;}
+.container {width: 1180px;  margin-right: auto; margin-left: auto;}
 .row {overflow: hidden;}
-.col-news{float: left; width: 280px; margin-right: 30px;}
+.col-news{float: left; width: 280px; margin-right: 20px;}
+.col-news:last-child{margin-right: 0;}
