@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>js</title>
+        
+	</head>
+	
+	<body>
+        <div id="hello">Hi </div>
+
+        <button onclick='changeText()' >Button</button>
+        <hr/>
+        <button onclick="handleTab1()">Tab1</button>
+        <button onclick="handleTab2()">Tab2</button>
+        <div id="content1">content 1</div>
+        <div id="content2" style="display: none;">content 2</div>
+
+        <script>
+
+            function handleTab2() {
+                document.getElementById('content1').style.display = "none";
+                document.getElementById('content2').style.display = "block";        
+            }
+
+            function handleTab1() {
+                document.getElementById('content2').style.display = "none";
+                document.getElementById('content1').style.display = "block";        
+            }
+
+            var text = "lkdsjflkj'  'df ";
+            var a = 10;
+            b = 3;
+            c = 10 + 3 + "TEXT";
+            console.log(c);      
+
+            document.getElementById('hello').innerHTML = c;            
+            document.getElementById('hello').classList.add("text");
+            document.getElementById('hello').style.display = "none";
+
+            function changeText() {
+                document.getElementById("hello").innerHTML = 'Hello world';                
+            }
+
+        </script>
+	</body>
+
+</html>
+
