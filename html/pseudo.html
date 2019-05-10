@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>responsive</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <style>
+        .link {text-decoration: none;color: blue;}    
+        .link:hover {color: black; text-decoration: underline;}
+        .link:active {color: blueviolet;}
+        .link:visited {color: cadetblue; font-size: 20px;}
+        
+        .par::first-line {color: red;}        
+        .par::first-letter {font-size: 30px; color: #fff; background-color: #000; padding: 10px;}
+        .par::before {content: 'BEFORE'}
+        .par::after {content: 'END'; background-color: chartreuse;}
+        .par::selection {background-color: darkcyan; color: #fff;}
+
+        .square {width: 200px; height: 200px; background-color: darkgoldenrod;}
+
+        .ball {width: 200px; height: 200px; border-radius: 50px; background-color: green;}
+
+        .tri {
+            width: 0;
+            height: 0;
+            
+            border: 20px solid transparent;
+            border-top: 20px solid red;
+            border-right: 20px solid red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <a class="link" href="https://m.facebook.com/">Facebook</a>
+
+    <p class="par">Ерөнхий боловсролын сургуулийн хоол үйлдвэрлэл үйлчилгээний тухай хууль буюу үдийн цай хөтөлбөрийг үдийн хоол болгон өөрчлөх тухай хуулийн төслийн эцсийн хэлэлцүүлгийг энэ долоо хоногт хийж, батлах байсан ч хойшлуулсан билээ. Өнгөрсөн оны зургаадугаар сард нэр бүхий гишүүдийн өргөн барьсан уг хуулийн төслийг хэлэлцэж эхэлсэн ч багагүй хугацаанд завсарлаж байгаад ийнхүү батлагдах гэж байна. Үдийн цайг үдийн хоол болгон өөрчлөх тухай хуулийн төслийн талаар ажлын хэсгийн гишүүн Ц.Мөнх-Оргилтой ярилцлаа. </p>
+
+    <div class="square"></div>
+
+    <div class="ball"></div>
+
+    <div class="tri"></div>
+
+</body>
+
+</html>

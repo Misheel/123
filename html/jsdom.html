@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>responsive</title>    
+    <style>
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            border-radius: 50%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>    
+    <div id="example"></div>
+
+    <div class="card"></div>
+    <h1 class="card"></h1>
+
+    <div id="ball" class="ball"></div>
+
+
+    <script>
+        document.getElementById("example").innerHTML = '<b> Hello </b>';
+        
+        var elements = document.getElementsByClassName("card");
+        elements[0].innerHTML = "ELEMENT1";
+        elements[1].innerText = "ELEMENT2";
+
+        elements[1].title = "ELEMENT2";
+
+        elements[1].style.color = "blue";
+        elements[1].style.fontSize = "50px";
+
+        var elementsByTagName = document.getElementsByTagName('div');
+
+        console.log(elementsByTagName);
+
+        var divElement = document.createElement('div');
+        var divContent = document.createTextNode("Hi there");
+        divElement.appendChild(divContent);
+        document.body.insertBefore(divElement, document.getElementById("example"))
+        
+        var ball = document.getElementById("ball");
+        
+
+        setInterval(animation, 5);
+
+        var balltop = 0;
+
+        function animation() {            
+            balltop = balltop + 1;            
+            ball.style.top = balltop +'px';
+            ball.style.left = balltop +'px';
+        }
+
+    </script>    
+</body>
+
+</html>
+
+
