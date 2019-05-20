@@ -21,6 +21,8 @@ alter table menu drop test;
 
 alter table menu modify link int;
 
+alter table menu rename column link to url;
+
 drop table menu;
 
 --------
