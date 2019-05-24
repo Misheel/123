@@ -4,7 +4,13 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
 
-	<definition name="home" template="/WEB-INF/views/home.jsp"></definition>
+	<definition name="layout" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="body" value=""></put-attribute>	
+	</definition>
+
+	<definition name="home" extends="layout">
+		<put-attribute name="ehbiy" value="/WEB-INF/views/home.jsp"></put-attribute>
+	</definition>
 	
 	<definition name="about" template="/WEB-INF/views/about.jsp"></definition>
   
